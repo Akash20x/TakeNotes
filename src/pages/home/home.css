@@ -1,0 +1,75 @@
+.home-container{
+    width: 100%;
+}
+
+.notes-container {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.note-editor{
+    width: 50%;
+    margin: 2rem auto 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--light-black);
+}
+
+.new-note-button {
+    padding: 0.8rem;
+    color: var(--theme-text-color);
+}
+
+
+/* || Overriding react-quill properties */
+
+.quill {
+    position: relative;
+    height: max-content !important;
+    color: var(--light-black);
+}
+
+.ql-editor {
+    min-height: 5rem;
+    padding-top: 0;
+}
+
+.ql-toolbar.ql-snow  {
+    border: 0;
+    width: max-content;
+}
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+    padding-bottom: 4rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.ql-container.ql-snow {
+    border: 0;
+}
+
+/* || Media Queries */
+
+@media screen and (max-width: 1124px) {
+    .note-editor {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .note-editor {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .note-editor {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .note-editor {
+        width: 95%;
+    }
+}

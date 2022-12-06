@@ -1,0 +1,93 @@
+.card-title {
+    margin: 10px 0;
+    color: var(--light-black);
+}
+
+.note-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 50%;
+    position: relative;
+    color: var(--light-black);
+}
+
+.note-card > .quill > .ql-container.ql-snow {
+    border: 0;
+}
+
+.dropdown-container {
+    position: absolute;
+    right: -1rem;
+    top: 2.2rem;
+    background: var(--white-color);
+    list-style: none;
+    box-shadow: 0px 0px 2px 1px var(--border-color);
+    border-radius: 4px;
+    z-index: 10
+}
+
+.dropdown-container li {
+    padding: 1px 0.8rem;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.dropdown-container li:hover {
+    background-color: var(--light-gray);
+}
+
+.action-icons {
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+.card-badges {
+    color: var(--light-black);
+    justify-content: space-between;
+}
+
+.card-tag {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+
+.card-priority {
+    background-color: var(--light-yellow);
+    border-radius: 8px;
+}
+
+.card-footer {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card-date {
+    color: var(--dark-gray);
+}
+
+/* || Media queries */
+
+@media screen and (max-width: 1124px) {
+    .note-card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .note-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .note-card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .note-card {
+        width: 95%;
+    }
+}

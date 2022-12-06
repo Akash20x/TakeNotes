@@ -1,0 +1,91 @@
+.edit-modal {
+    width: 37%;
+    min-width: 25rem;
+    max-width: 35rem;
+    margin-top: 10rem;
+    border-radius: 8px;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--overlay);
+    z-index: 4000;  
+}
+
+.edit-modal > .quill{
+    height: 3in !important;
+}
+
+.priority {
+    background: transparent;
+    width: 8rem;
+    border-radius: 4px;
+    padding: 3px 5px 3px 3px;
+}
+
+.editor-footer {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.note-add {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.note-close {
+    color: var(--danger);
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+.note-pin {
+    cursor: pointer;
+}
+
+.title-container {
+    width: 100%;
+}
+
+.note-title {
+    background: transparent;
+    border: unset;
+    outline: unset;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    font-size: medium;
+    font-weight: bold;
+    color: var(--light-black);
+}
+
+.note-header {
+    position: relative;
+}
+
+.editor-close-icon {
+    position: absolute;
+    right: -0.8rem;
+    color: var(--danger);
+    top: -0.8rem;
+}
+
+.editor-close-icon > svg {
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+
+.priority-dropdown {
+    border: unset;
+    outline: none;
+}
+
+.modal-container .ql-editor {
+    min-height: 10rem;
+}

@@ -1,0 +1,50 @@
+@import url("https://cdn.jsdelivr.net/gh/ApurvaSawant11/Dazzle-UI-Components@development/components/components.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+:root {
+    --theme-bg: #ffffff;
+    --theme-text-color:#313131;
+    --primary: #3c78ef;
+    --primary-hover: #2a2c30;
+    --secondary: #feb000;
+    --tertiary: #cf7500;
+    --light-blue:#c7eafa70;
+    --light-yellow:#f4f09c;
+    --overlay:rgba(77, 77, 77, 0.71);
+    --navbar-bg: #ffffff;
+    --border-color: #ccc;
+    --black-color: #000000;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+[data-theme='night'] {
+    --theme-bg: #202020;
+    --theme-text-color: #dad8d8;
+    --navbar-bg: #0e0e0e;
+    --border-color: #969393;
+    --shadow: #3c3c3c;
+    --overlay: rgba(56, 56, 56, 0.60);
+  
+}
+
+.App {
+    background: var(--theme-bg);
+    color: var(--theme-text-color);
+    min-height: 100vh;
+}
+  
+
+.flex-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
